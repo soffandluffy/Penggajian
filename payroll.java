@@ -7,7 +7,10 @@ public class payroll {
         Scanner input = new Scanner(System.in);
         String nama,nim,divisi;
         int gol,hari,asuransi,gapok,transport,total,gaji;
-        
+        identitas identitas = new identitas();
+
+        identitas.kelompok("Kelompok 46");
+        identitas.aplikasi();
         System.out.print ("Masukkan Nama : ");
         nama = input.nextLine();
         System.out.print ("Masukkan NIM : ");
@@ -39,30 +42,21 @@ public class payroll {
                 asuransi=gapok*5/100;
                 gaji=gapok-asuransi;
                 total=gaji+transport;
-                System.out.println ("Tunjangan Transport : "+transport);
-                System.out.println ("Gaji Pokok : "+gapok);
-                System.out.println ("Asuransi : "+asuransi);
-                System.out.println ("Total Gaji : "+total);
+                tampilkan(transport,gapok,asuransi,total);
                 break;
             case 2:
                 gapok=2500000;
                 asuransi=gapok*3/100;
                 gaji=gapok-asuransi;
                 total=gaji+transport;
-                System.out.println ("Tunjangan Transport : "+transport);
-                System.out.println ("Gaji Pokok : "+gapok);
-                System.out.println ("Asuransi : "+asuransi);
-                System.out.println ("Total Gaji : "+total);
+                tampilkan(transport,gapok,asuransi,total);
                 break;
             case 3:
                 gapok=2000000;
                 asuransi=gapok*2/100;
                 gaji=gapok-asuransi;
                 total=gaji+transport;
-                System.out.println ("Tunjangan Transport : "+transport);
-                System.out.println ("Gaji Pokok : "+gapok);
-                System.out.println ("Asuransi : "+asuransi);
-                System.out.println ("Total Gaji : "+total);
+                tampilkan(transport,gapok,asuransi,total);
                 break;
             default:
                 break;
@@ -70,9 +64,13 @@ public class payroll {
     }
 
     //function  
-
+static void tampilkan(int transport, int gapok, int asuransi, int total) {
+    System.out.println ("Tunjangan Transport : "+transport);
+    System.out.println ("Gaji Pokok : "+gapok);
+    System.out.println ("Asuransi : "+asuransi);
+    System.out.println ("Total Gaji : "+total);
 }
-
+}
 
 
 
