@@ -64,12 +64,12 @@ public class payroll {
     }
 
     //function  
-static void tampilkan(int transport, int gapok, int asuransi, int total) {
-    System.out.println ("Tunjangan Transport : "+transport);
-    System.out.println ("Gaji Pokok : "+gapok);
-    System.out.println ("Asuransi : "+asuransi);
-    System.out.println ("Total Gaji : "+total);
-}
+    static void tampilkan(int transport, int gapok, int asuransi, int total) {
+        System.out.println ("Tunjangan Transport : "+transport);
+        System.out.println ("Gaji Pokok : "+gapok);
+        System.out.println ("Asuransi : "+asuransi);
+        System.out.println ("Total Gaji : "+total);
+    }
 }
 
 

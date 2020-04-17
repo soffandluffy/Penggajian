@@ -2,9 +2,10 @@
 public class identitas {
 	public void kelompok(String kelompok){
 		System.out.println("Kami dari " + kelompok);
-		System.out.println("Soffan Marsus Ahmad\t 21120119130042");
+		String[][] anggota = {{"Soffan Marsus Ahmad", "21120119130042"}, {"Muhammad Firmansyah", "21120119130102"}};
+		System.out.println(anggota[0][0]+"\t"+anggota[0][1]);
 		System.out.println("\t\t DAN \t");
-		System.out.println("Muhammad Firmansyah\t 21120119130102");		
+		System.out.println(anggota[1][0]+"\t"+anggota[1][1]);
 	}
 
 	public void aplikasi(){
